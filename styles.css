@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f2f2f2;
+    height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
+  }
+.conetedor-principal{
+ border: 2px rgb(27, 37, 95) solid;
+ background-color: #489fe6;
+ width: 500px;
+ height: 250px;
+ border-radius: 10px;
+ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+ transition: border-color 0.3s ease-in-out;
+} 
+.conetedor-principal h1{
+    margin-top: 15px;
+    text-align: center;
+    padding: 10px;
+}
+
+.conetedor-principal form{
+    display: flex;
+    flex-direction: column;
+
+}
+.conetedor-principal form label{
+    text-align: center;
+}
+.conetedor-principal form input{
+    width: 200px;
+    margin-bottom: 10px;
+    margin-left: 150px;
+    font-size: 10px;
+    font-family: 'Arial', sans-serif;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px; /* Espacio interno para que el texto no esté pegado al borde */
+    transition: border-color 0.3s ease-in-out;
+    display: inline;
+   text-align: center;
+}
+.conetedor-principal input::placeholder {
+    color: #999;
+    font-style: italic;
+  }
+  input:focus {
+    border-color: #3978dd;
+    box-shadow: 0 0 5px rgba(33, 117, 252, 0.5);
+  }
+  .boton {
+    width: 100px;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #0264ce;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    margin-left: 200px;
+  }
+  
+  /* Estilos para el hover */
+  .boton:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Estilos para el focus */
+  .boton:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+  }
+  
+  .boton:active {
+    background-color: #004582;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) inset;
+    transform: translateY(1px);
+  }
+ /* esto le da un efecto despues del click */
+  .boton:disabled {
+    background-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
+    box-shadow: none;
+  }
+
+  .resultado{
+    width: 200px;
+    height: 50px;
+    margin-left: 150px;
+    margin-top: 10px;
+    justify-content: center;
+  }
+  .resultado p{
+    margin: 5px;
+    text-align: center;
+  }
+
